@@ -3344,7 +3344,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv #specialsCollapsible.verticalSection.detailVerticalSection {
   top: 18.5em;
   left: 30.5em;
-  max-width: calc(100vw - 32em);
+  max-width: 54vh;
   height: 18em;
   position: fixed !important;
   color: #fff;
@@ -3409,8 +3409,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop .nextUpSection.verticalSection.detailVerticalSection,
 .layout-tv .nextUpSection.verticalSection.detailVerticalSection {
   top: 0em !important;
-  max-width: unset;
-  overflow: visible;
+  max-width: 107vh;
+  overflow: hidden;
 }
 
 .layout-desktop #listChildrenCollapsible,
@@ -3418,7 +3418,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   top: 17.5em !important;
   transition: max-width 0.2s ease-out 1s, background 1s ease-out 2s, border-color 0.5s ease-out 2s, padding-left 1s ease-out 1s, padding-right 1s ease-out 1s !important;
   border-radius: var(--rounding);
-  max-width: calc(100vw - 32em) !important;
+  max-width: 59vh !important;
   height: 16.2em !important;
   padding-right: 1em;
 }
@@ -4322,7 +4322,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .itemBackdrop {
-  height: 40vh;
+  height: 0vh;
 }
 
 .detailPageWrapperContainer {
@@ -4407,8 +4407,10 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 /* --- Episode Page --- */
 
-.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop,
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #itemBackdrop {
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #itemBackdrop,
+.layout-desktop .itemDetailPage:has(.itemName.infoText.subtitle) #itemBackdrop,
+.layout-tv .itemDetailPage:has(.itemName.infoText.subtitle) #itemBackdrop {
   height: 0em;
 }
 
@@ -4808,7 +4810,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 .detailPageWrapperContainer::before {
   content: '';
-  position: fixed;
+  position: absolute;
   animation: fadeTitle 2s ease-out 2.5s forwards;
   top: 0;
   left: 0;
@@ -4818,9 +4820,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
   background-size: cover;
   backdrop-filter: var(--backdropBlur);
   z-index: -1;
-  width: calc(100vw - 22em);
+  width: 100vw;
   height: 100vh;
-  pointer-events: none;
 }
 
 .detailPageWrapperContainer:has(.listItem.listItem-largeImage.listItem-withContentWrapper[data-type="Episode"]),
@@ -5052,9 +5053,9 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop #similarCollapsible .card.overflowBackdropCard,
 .layout-tv #similarCollapsible .card.overflowBackdropCard {
   transition: transform 0.1s ease-in-out 0s, margin-bottom 0.1s ease-out 0s;
-  transform: translateX(0%);
+  transform: translateX(15%);
   transform-origin: top right;
-  margin-left: 0em;
+  margin-left: 13em;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard:hover,
@@ -5063,7 +5064,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv #similarCollapsible .card.overflowSquareCard:focus,
 .layout-desktop #similarCollapsible .card.overflowBackdropCard:hover,
 .layout-tv #similarCollapsible .card.overflowBackdropCard:focus {
-  transform: translateX(-10%) translateY(-6%) scale(1.25);
+  transform: translateX(20%) translateY(-6%) scale(1.45);
   transform-origin: top right;
   transition: transform 0.2s ease-out 0s, margin-bottom 0.2s ease-out 0s;
   z-index: 9;
