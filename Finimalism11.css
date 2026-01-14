@@ -4407,10 +4407,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 
 /* --- Episode Page --- */
 
-.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop
-.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #itemBackdrop,
-.layout-desktop .itemDetailPage:has(.itemName.infoText.subtitle) #itemBackdrop,
-.layout-tv .itemDetailPage:has(.itemName.infoText.subtitle) #itemBackdrop {
+.layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) #itemBackdrop,
+.layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) #itemBackdrop {
   height: 0em;
 }
 
@@ -5053,9 +5051,9 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-desktop #similarCollapsible .card.overflowBackdropCard,
 .layout-tv #similarCollapsible .card.overflowBackdropCard {
   transition: transform 0.1s ease-in-out 0s, margin-bottom 0.1s ease-out 0s;
-  transform: translateX(15%);
+  transform: translateX(0%);
   transform-origin: top right;
-  margin-left: 13em;
+  margin-left: 0em;
 }
 
 .layout-desktop #similarCollapsible .card.overflowPortraitCard:hover,
@@ -5064,7 +5062,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 .layout-tv #similarCollapsible .card.overflowSquareCard:focus,
 .layout-desktop #similarCollapsible .card.overflowBackdropCard:hover,
 .layout-tv #similarCollapsible .card.overflowBackdropCard:focus {
-  transform: translateX(20%) translateY(-6%) scale(1.45);
+  transform: translateX(-10%) translateY(-6%) scale(1.25);
   transform-origin: top right;
   transition: transform 0.2s ease-out 0s, margin-bottom 0.2s ease-out 0s;
   z-index: 9;
