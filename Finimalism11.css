@@ -402,6 +402,11 @@ h2 {
   background-color: rgba(0, 0, 0, 0);
 }
 
+#itemDetailPage .backgroundContainer,
+.itemDetailPage .backgroundContainer {
+  background-color: transparent !important;
+}
+
 .backgroundProgress > div {
   background-color: #7b7b7b;
 }
